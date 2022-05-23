@@ -1,3 +1,6 @@
+- [主应用](./main-app/)
+  - [微应用](./sub-app-vue/)
+
 ### 主应用
 #### 1. 安装qiankun
 ```sh
