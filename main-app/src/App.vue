@@ -4,13 +4,20 @@
       <h1>Main App</h1>
       <ul>
         <!-- 主引用/基座 -->
+        <li class="title">主应用：</li>
         <li><router-link to="/main-app">main-app</router-link></li>
-  
+      </ul>
+      <ul>
         <!-- 子引用 -->
-        <li><router-link to="/sub-app-vue">sub-app-vue</router-link></li>
-  
+        <li class="title">vue子应用：</li>
+        <li><router-link to="/sub-app-vue">home</router-link></li>
+        <li><router-link to="/sub-app-vue/about">about</router-link></li>
+      </ul>
+      <ul>
         <!-- 子引用 -->
-        <li><router-link to="/sub-app-react">sub-app-react</router-link></li>
+        <li class="title">react子应用：</li>
+        <li><router-link to="/sub-app-react">home</router-link></li>
+        <li><router-link to="/sub-app-react/about">about</router-link></li>
       </ul>
     </header>
 
@@ -28,11 +35,8 @@ export default {
 </script>
 
 <style scoped>
-.main {
-  text-align: center;
-}
 header {
-  padding: 20px 0;
+  padding: 20px 0 20px 10px;
   background-color: #f6f6f6;
 }
 h1 {
@@ -45,7 +49,10 @@ ul {
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin-right: 10px;
+}
+.title {
+  width: 105px;
 }
 a {
   color: #42b983;
